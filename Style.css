@@ -1,0 +1,561 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    width: 100%; 
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.6em;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h2{
+    margin-bottom: 15px;
+}
+.container{
+    margin: auto;
+    padding: 0 20px;
+    max-width: 1100px;
+}
+#showcase{
+    height: 100vh;
+    background: url(images/whippedbodybutter.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.features {
+    background: none;
+    color: salmon;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .features figure {
+    margin: auto;
+    width: 200px;
+    text-align: center;
+  }
+  .features figure img {
+    border: 1px solid bisque;
+    border-radius: 70%;
+    box-shadow: gray 0 0 13px;
+    width: 200px;
+  }
+
+footer {
+    background: black;
+    font-size: 10px;
+    color: gray;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.overlay{
+    height: 100vh;
+    background: rgba(43,45,66,0.7);
+}
+
+
+/* class to center text when necessary */
+.center-inline {
+    text-align: center;
+  }
+  
+  .floatleft {
+    float: left;
+    margin-right: 4em;
+  }
+  
+  .clear {
+    clear: both;
+  }
+  
+  .studio {
+    font-style: italic;
+  }
+  
+  .row {
+    clear: both;
+    width: 100%;
+    padding-top: 20px;
+  }
+  
+  .row img {
+    width: 100%;
+  }
+  
+  .col-half {
+    width: 50%;
+    float: left;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  .col-third {
+    width: 33.333%;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .button {
+    margin-top: 42px;
+    text-align: center;
+    margin-bottom: 42px;
+  }
+  
+  .mobile {
+    display: none;
+  }
+  
+  .desktop {
+    display: inline;
+  }
+  
+  .lightbox {
+    /** lightbox does not display initially **/
+    display: none;
+  
+    /** Position and style of lightbox. It covers all of the page starting at the top left corner **/
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+  
+    /** Places the lightbox above all other content **/
+    z-index: 999;
+  
+    /** Adds a black background at 80% opacity **/
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  .lightbox img {
+    max-width: 75%;
+    margin-top: 2%;
+  }
+  
+  .lightbox iframe {
+    /** Adds a top margin for the YouTube iFrame **/
+    margin-top: 15%;
+  }
+  
+  .lightbox:target {
+    display: block;
+    transition: 0.5s ease;
+    outline: none;
+  }
+  
+  .thumb:hover {
+    opacity: 0.8;
+    transition: 0.1s ease;
+  }
+  
+  .button a {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #3f2860;
+    padding: 16px;
+    background-color: #9bc1c2;
+  }
+  
+  .button a:hover {
+    opacity: 0.85;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  
+  @media screen and (max-width: 1024px) {
+    body {
+      margin: 0;
+      padding: 0;
+    }
+  
+    #wrapper {
+      width: 100%;
+      min-width: 300px;
+      margin: 0;
+      padding: 0;
+    }
+  
+    main {
+      font-size: 1.15em;
+    }
+  
+    main h2 {
+      font-size: 1.15em;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    header {
+      padding: 20px;
+    }
+  
+    nav {
+      margin: 0;
+      padding: 0;
+    }
+  
+    nav ul {
+      margin: 0;
+      padding: 0;
+    }
+  
+    nav li {
+      margin: 0;
+      padding: 0;
+      display: block;
+    }
+  
+    nav a {
+      display: block;
+      padding: 0.75em;
+    }
+  
+    .col-half {
+      float: none;
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-bottom: 28px;
+    }
+  
+    .col-third {
+      float: none;
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    h1 {
+      font-size: 2em;
+    }
+  
+    main h2 {
+      font-size: 1.25em;
+    }
+  
+    .desktop {
+      display: none;
+    }
+  
+    .mobile {
+      display: inline;
+    }
+  }
+
+
+/*navbar */
+nav{
+    height: 80px;
+    width: 100px;
+}
+.logo{
+    color: turquoise;
+    font-size: 30px;
+    line-height: 80px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: 5px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+.active,a:hover{
+    color: red;
+    border-bottom: 1px solid red;
+}
+.landing{
+    display: table;
+    height: 87.1vh;
+    width: 100%;
+    text-align: left;
+}
+
+.landing-content{
+    display: table-cell;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #edf2f4;
+}
+.sm-heading{
+    font-weight: 300;
+    margin: 5px;
+    font-size: 1.5em;
+    text-align: center;
+}
+.sm-heading span{
+    border-left: 5px solid red;
+    padding-left: 15px;  
+}
+.lg-heading{
+    font-size: 3em;
+    line-height: 1.3em;
+    font-weight: 700;
+    text-align: center;
+}
+.text-primary{
+    color: red;  
+}
+  .button-test {
+    display: block;
+    width: 128px;
+    height: 60px;
+    padding-left: 20px;
+    background-color: lightblue;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: #222;
+    line-height: 60px;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+ 
+  .contact-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-info{
+    color: #fff;
+    max-width: 500px;
+    line-height: 65px;
+    padding-left: 50px;
+    font-size: 18px;
+  }
+  .contact-info i{
+    margin-right: 20px;
+    font-size: 25px;
+  }
+  .contact-form{
+    max-width: 700px;
+    margin-right: 50px;
+  }
+  .contact-info, .contact-form{
+    flex: 1;
+  }
+  .contact-form h2{
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  .contact-form .text-box{
+    background: #000;
+    color: #fff;
+    border: none;
+    width: calc(50%-10px);
+    height: 50px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+  }
+  .contact-form .text-box:first-child{
+    margin-right: 15px;
+  }
+  .contact-form textarea{
+    background: #000;
+    color:#fff;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+  }
+  .contact-form .send-btn{
+    float: right;
+    background: #2e94e3;
+    color: #fff;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: background;
+  }
+  .contact-form .send-btn:hover{
+    background: #0582e3;
+  }
+ @media screen and (max-width: 950px) {
+    .contact-section{
+        flex-direction: column;
+    }
+    .contact-info, .contact-form{
+        margin: 30px 50px;
+    }
+    .contact-form h2{
+        font-size: 30px;
+    }
+    .contact-form .text-box{
+        width: 100%;
+    }
+ }
+ header .mobile {
+    display: none;
+  }
+/*cc for alert message*/
+.alert-success{
+    z-index: 1;
+    background: #d4edda;
+    font-size: 18px;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: fixed;
+    right: 0;
+    top: 10px;
+    border-left: 8px solid #3ad66e;
+    border-radius: 4px;
+}
+.alert-error{
+    z-index: 1;
+    background: #fff3cd;
+    font-size: 18px;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: fixed;
+    right: 0;
+    top: 10px;
+    border-left: 8px solid #ffa502;
+    border-radius: 4px;
+}
+#form {
+    width: 300px;
+    margin: 20vh auto 0 auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    font-size: 12px;
+}
+#form h1 {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    background: rgb(41, 57, 194);
+    border: none;
+    border-radius: 4px;
+}
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+.input-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+    width: 100%;
+}
+.input-control input:focus {
+    outline: 0;
+}
+.input-control.success input {
+    border-color: #09c372;
+}
+.input-control.error input {
+    border-color: red;
+    font-size: 9px;
+    height: 13px;
+}
+
+.form-box{
+    width: 500px;
+    background: rgba(0,0,0,0.8);
+    margin: 12% auto;
+    padding: 50px 0;
+    color: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.input-box{
+    margin: 31px auto;
+    width: 80%;
+    border-bottom: 1px solid white;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.input-box input{
+    width: 90%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+::placeholder{
+    color: #ccc; 
+}
+.fa{
+    margin-right: 10px;
+}
+.eye{
+  position: absolute; 
+}
+#hide1{
+    display: none;
+}
+.login-btn{
+    margin: 40px auto 20px;
+    width: 80%;
+    display: block;
+    outline: none;
+    padding: 10px 0;
+    border: 1px solid #fff;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+}
