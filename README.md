@@ -3,7 +3,7 @@
 
 🚀 Skills and Technologies
 
-v=Programming Languages: Python, SQL
+v= Programming Languages: Python, SQL
 Machine Learning Frameworks: Scikit-Learn, XGBoost, LightGBM, CatBoost
 Data Visualization: Matplotlib, Seaborn
 Core Competencies: Statistics, Probability, Linear Algebra, Data Analysis
