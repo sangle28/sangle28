@@ -1,12 +1,11 @@
 - 👋 Hi, I’m @sangle28
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+   I finished my bachelor's degree in software development. Recently I finish my certificate in Data Science at TripleTen. 
 
-<!---
-sangle28/sangle28 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+🚀 Skills and Technologies
+v=Programming Languages: Python, SQL
+Machine Learning Frameworks: Scikit-Learn, XGBoost, LightGBM, CatBoost
+Data Visualization: Matplotlib, Seaborn
+Core Competencies: Statistics, Probability, Linear Algebra, Data Analysis
+
+
+- 📫 How to reach me by Linkedin: www.linkedin.com/in/sangtle16
