@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @sangle28
+# 👋 Hi, I’m Sang
    I finished my bachelor's degree in software development. Recently I finish my certificate in Data Science at TripleTen. 
 
 🚀 Skills and Technologies
